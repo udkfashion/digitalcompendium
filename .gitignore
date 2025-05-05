@@ -1,0 +1,5 @@
+*.odp
+*.odp#
+
+*.DS_STORE
+*.DS_Store
