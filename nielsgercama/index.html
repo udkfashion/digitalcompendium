@@ -118,6 +118,11 @@
                 user-select: none;
             }
 
+            #down:hover {
+                cursor:pointer;
+                opacity:1;
+            }
+
             #audioplayer {
                 width:100%;
                 top:0;
@@ -168,7 +173,7 @@
 
     <img class="navigator" id="prev" style="left:10px; visibility:hidden;" src="media/page/previous.png">
     <img class="navigator" id="next" style="right:10px" src="media/page/next.png">
-    <img id="down" id="next" src="media/page/down.png">
+    <img id="down" id="next" onclick="scrollBottom()" src="media/page/down.png">
     <span id="npages">0</span>
     
 

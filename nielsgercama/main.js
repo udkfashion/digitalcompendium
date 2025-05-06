@@ -248,3 +248,11 @@ window.onscroll = function() {
         down.style.visibility = "hidden";
     }
 }
+
+function scrollBottom() {
+    window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: 'smooth'
+    });
+}
+
