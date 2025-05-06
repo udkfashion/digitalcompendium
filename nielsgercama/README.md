@@ -26,7 +26,7 @@ To make your own compendium site, take the following step:
 
 ```javascript
 const PAGES = {
-    3 : {
+    4 : {
 
         type : "youtube", //video, youtube, miro , 3d 
         link:"https://www.youtube.com/watch?v=Bx3O0N2nXcs&t=3s",
@@ -34,7 +34,7 @@ const PAGES = {
 
     },
 
-    4 : {
+    6 : {
 
         type:"video", //video, youtube, miro , 3d 
         link:"media/examplevideo/video.mp4",
@@ -42,7 +42,7 @@ const PAGES = {
 
     },
     
-    6 : {
+    8 : {
 
         type:"miro", //video, youtube, miro , 3d 
         link:"https://miro.com/app/embed/uXjVKE-Zstg=/?pres=1&frameId=3458764614711847583&embedId=503370172447&autoplay=yep",
@@ -50,7 +50,7 @@ const PAGES = {
 
 	},
 
-    7 : {
+    10 : {
 
         type:"3d", //video, youtube, miro , 3d 
         link:"media/example3d/model.glb",
@@ -64,8 +64,8 @@ const AUDIO = {
 
     "media/exampleaudio/audio2.mp3" : {
 
-        "start" : 2,
-        "end" : 5
+        "start" : 6,
+        "end" : 9
 
     }
 }
