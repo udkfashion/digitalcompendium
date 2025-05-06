@@ -145,6 +145,8 @@ const PDFStart = nameRoute => {
                 down = document.getElementById("down");
 
                 viewport = page.getViewport({scale: 1});
+                console.log(viewport);
+                console.log(window.screen);
                 let scale =  window.screen.width / viewport.width;
                 viewport = page.getViewport({scale:scale});
 
@@ -231,3 +233,17 @@ const startPdf = () => {
 }
 
 window.addEventListener('load', startPdf);
+
+window.onscroll = function() {
+    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    var windowHeight = window.innerHeight;
+    var documentHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+    var down = document.getElementById("down");
+
+    if (scrollTop + windowHeight >= documentHeight) {
+        // User has scrolled to the bottom of the page
+        console.log("Scrolled to the bottom");
+        // Perform your desired action here
+        down.style.visibility = "hidden";
+    }
+}
