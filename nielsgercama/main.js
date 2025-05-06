@@ -145,9 +145,10 @@ const PDFStart = nameRoute => {
                 down = document.getElementById("down");
 
                 viewport = page.getViewport({scale: 1});
-                console.log(viewport);
-                console.log(window.screen);
-                let scale =  window.screen.width / viewport.width;
+                // console.log(viewport);
+                // console.log(window.screen);
+                // let scale =  window.screen.width / viewport.width;
+                const scale = 4;
                 viewport = page.getViewport({scale:scale});
 
                 canvas.width = viewport.width;
