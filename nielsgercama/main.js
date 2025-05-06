@@ -250,8 +250,9 @@ window.onscroll = function() {
 }
 
 function scrollBottom() {
+    var canvas = document.getElementById("cnv");
     window.scrollTo({
-        top: document.body.scrollHeight,
+        top: canvas.scrollHeight,
         behavior: 'smooth'
     });
 }
